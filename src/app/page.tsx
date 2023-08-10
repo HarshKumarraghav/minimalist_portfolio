@@ -1,6 +1,7 @@
 import Header from "@/components/Header/Header";
 import AboutSection from "@/components/Main/AboutSection";
 import HeroSection from "@/components/Main/HeroSection";
+import TechStack from "@/components/Main/TechStack";
 import WorkExperienceSection from "@/components/Main/WorkExperienceSection";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <Header />
         <HeroSection />
         <AboutSection />
+        <TechStack />
         <WorkExperienceSection />
       </section>
     </main>

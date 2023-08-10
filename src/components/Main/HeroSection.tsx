@@ -41,7 +41,7 @@ const HeroSection = () => {
             "I build things for the web."
           </span>
         </div>
-        <p className="text-center">
+        <p className="text-center text-gray-500 dark:text-white">
           Tech-savvy problem-solver with a passion for coding and a love for
           innovation. Proficient in Javascript, TypeScript, Go, Next JS,
           ReactJS, React Native and go-fiber, Bringing a unique blend of
