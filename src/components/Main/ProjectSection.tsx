@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Card,
@@ -7,11 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import {
-  CardStackIcon,
-  ExternalLinkIcon,
-  GitHubLogoIcon,
-} from "@radix-ui/react-icons";
+import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
@@ -40,10 +37,24 @@ const ProjectSection = () => {
               Periodic Table at startup interface. The table has a long- form
               approved by the International Union of Pure and Applied Chemistry
               (IUPAC) as the core.
-              <Button className="text-white  rounded-full">
+              <Button
+                className="text-white  rounded-full"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/HarshKumarraghav/periodically"
+                  )
+                }
+              >
                 <GitHubLogoIcon />
               </Button>
-              <Button className="text-white rounded-full">
+              <Button
+                className="text-white rounded-full"
+                onClick={() =>
+                  window.open(
+                    "https://periodically-webapp-harshkumarraghav.vercel.app/"
+                  )
+                }
+              >
                 <ExternalLinkIcon />
               </Button>
             </CardDescription>
@@ -65,7 +76,7 @@ const ProjectSection = () => {
               periodic table for our upcoming Unit test used to be a nightmare
               for many of us! The periodic table is the heart of chemistry and
               to make its learning more fun and engaging, the idea to build
-              "Periodically-The Periodic Table" was born.
+              &quot;Periodically-The Periodic Table&quot; was born.
             </p>
           </CardContent>
           <CardFooter className="mt-2 flex flex-col">
@@ -98,10 +109,20 @@ const ProjectSection = () => {
               cryptos, interactive charts, currency converter, news, and
               portfolio tracking. Powered by React.js, Tailwind CSS, CoinGecko
               API, Bing News API, and Shcadcn UI.
-              <Button className="text-white  rounded-full">
+              <Button
+                className="text-white  rounded-full"
+                onClick={() =>
+                  window.open("https://github.com/HarshKumarraghav/Cryptoverse")
+                }
+              >
                 <GitHubLogoIcon />
               </Button>
-              <Button className="text-white rounded-full">
+              <Button
+                className="text-white rounded-full"
+                onClick={() =>
+                  window.open("https://cryptoapiappreact.netlify.app")
+                }
+              >
                 <ExternalLinkIcon />
               </Button>
             </CardDescription>

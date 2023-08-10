@@ -76,7 +76,7 @@ const WorkExperienceSection = () => {
                 I took the lead in organizing seminars and workshops, mentoring
                 students and initiating their development paths. Through various
                 App and Web development workshops, I played a pivotal role in
-                enhancing students' skills in crafting web and mobile
+                enhancing students skills in crafting web and mobile
                 applications.
               </p>
             </CardContent>

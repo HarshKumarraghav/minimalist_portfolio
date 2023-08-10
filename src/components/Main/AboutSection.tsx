@@ -42,14 +42,15 @@ const AboutSection = () => {
             </span>
             , a dedicated Software Engineer from Delhi, India, with a relentless
             passion for innovation and technological advancement. Currently
-            pursuing a Bachelor's degree in Information Technology from Gautam
-            Buddha University, I have maintained an impressive GPA of 8.2.
+            pursuing a Bachelor&apos;s degree in Information Technology from
+            Gautam Buddha University, I have maintained an impressive GPA of
+            8.2.
           </p>
           <br />
           <p>
             My tech journey commenced in July 2020, joining{" "}
             <span className="text-black dark:text-white">
-              Bots Fusion AI's{" "}
+              Bots Fusion AI&apos;s{" "}
             </span>
             Core Development Team. At Bots Fusion AI, I played a pivotal role in
             creating the Chatbot Builder Dashboard. Employing ReactFlow, I
@@ -72,11 +73,11 @@ const AboutSection = () => {
           </p>
           <br />
           <p>
-            1'm also a writer, sharing insights on becoming a front-end
+            I&apos;m also a writer, sharing insights on becoming a front-end
             developer and GitHub management. Committed to innovation,
-            collaborative problem-solving, and mentorship, I'm ready to make a
-            lasting impact in software engineering. Excited to drive change and
-            contribute further.
+            collaborative problem-solving, and mentorship, I&apos;m ready to
+            make a lasting impact in software engineering. Excited to drive
+            change and contribute further.
           </p>
         </div>
       </div>

@@ -45,7 +45,7 @@ const HeroSection = () => {
             Harsh K. Raghav
           </h1>
           <span className="italic text-lg font-semibold ">
-            "I build things for the web."
+            &quot;I build things for the web.&quot;
           </span>
         </div>
         <div className="flex gap-x-4">
