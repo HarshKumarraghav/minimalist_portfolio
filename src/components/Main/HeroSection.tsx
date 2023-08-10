@@ -31,7 +31,7 @@ const HeroSection = () => {
           )}
         </div>
       </div>
-      <div className="w-full h-2/3 flex mt-12 items-center justify-evenly flex-col gap-y-2 border-b">
+      <div className="w-full h-2/3 flex mt-12 items-center justify-evenly flex-col gap-y-2 ">
         <div className="text-3xl font-bold text-center ">
           <span className="text-xl"> Hi,👋 I&apos;m</span>
           <h1 className="italic text-primary typewriter__heading">

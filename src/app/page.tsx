@@ -5,7 +5,7 @@ import HeroSection from "@/components/Main/HeroSection";
 export default function Home() {
   return (
     <main className="w-screen flex flex-col items-center">
-      <section className="w-full md:w-[80%] lg:w-[60%] h-screen ">
+      <section className="w-full md:w-[80%] lg:w-[60%]">
         <Header />
         <HeroSection />
         <AboutSection />
