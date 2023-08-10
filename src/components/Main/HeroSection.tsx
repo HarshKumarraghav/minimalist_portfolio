@@ -9,8 +9,8 @@ import { FileTextIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 const HeroSection = () => {
   const { theme } = useTheme();
   return (
-    <div className="w-full h-[calc(100vh-5rem)] flex flex-col justify-center items-center px-2">
-      <div className="w-full h-1/3 border-b border-primary relative flex justify-center">
+    <div className="w-full h-[calc(100vh-5rem)] flex flex-col justify-center items-center px-4">
+      <div className="w-full h-1/3 border-b border-primary  relative flex justify-center">
         <div className="absolute -bottom-9  floating__avatar glow__background">
           <Badge className="ml-16 mb-4 text-white">Software Engineer</Badge>
           {theme === "dark" ? (

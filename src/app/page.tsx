@@ -1,6 +1,7 @@
 import Header from "@/components/Header/Header";
 import AboutSection from "@/components/Main/AboutSection";
 import HeroSection from "@/components/Main/HeroSection";
+import WorkExperienceSection from "@/components/Main/WorkExperienceSection";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Header />
         <HeroSection />
         <AboutSection />
+        <WorkExperienceSection />
       </section>
     </main>
   );
