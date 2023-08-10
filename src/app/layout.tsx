@@ -1,13 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import ThemeProviders from "@/Providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Harsh K. Raghav",
   description:
-    "Software Engineer, Full Stack Developer, Go, React, and Next.js enthusiast",
+    "Software Engineer, Full Stack Developer, Go, React.js, and Next.js enthusiast",
 };
 
 export default function RootLayout({
@@ -17,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <ThemeProviders>{children}</ThemeProviders>
+      </body>
     </html>
   );
 }

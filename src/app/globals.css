@@ -62,6 +62,11 @@
   }
 }
 
+/* The `.gradient___text___color` class is defining a CSS gradient background for text. The background
+is created using a linear gradient that starts with the color `#0f172a`, transitions to a color
+defined using the HSL color model (`hsl(262.1 83.3% 57.8%)`), and ends with `#0f172a`. The gradient
+is set to repeat horizontally (`0 0`) and cover the entire text (`/400% 100%`). */
+
 .gradient___text___color {
   background: linear-gradient(30deg, #0f172a, hsl(262.1 83.3% 57.8%), #0f172a) 0
     0 /400% 100%;
@@ -70,6 +75,7 @@
   -webkit-background-clip: text;
   animation: move-bg 15s linear infinite;
 }
+
 @keyframes move-bg {
   100% {
     background-position: 400% 0;
