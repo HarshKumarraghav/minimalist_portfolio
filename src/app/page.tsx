@@ -1,6 +1,8 @@
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import AboutSection from "@/components/Main/AboutSection";
 import HeroSection from "@/components/Main/HeroSection";
+import ProjectSection from "@/components/Main/ProjectSection";
 import TechStack from "@/components/Main/TechStack";
 import WorkExperienceSection from "@/components/Main/WorkExperienceSection";
 
@@ -13,6 +15,8 @@ export default function Home() {
         <AboutSection />
         <TechStack />
         <WorkExperienceSection />
+        <ProjectSection />
+        <Footer />
       </section>
     </main>
   );

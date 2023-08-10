@@ -17,8 +17,8 @@ import { TbBrandGolang, TbBrandNextjs } from "react-icons/tb";
 import { SiPostman, SiRailway, SiRender, SiVercel } from "react-icons/si";
 const TechStack = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center px-4 ">
-      <div className="border-b text-center my-4">
+    <div className="w-full min-h-screen flex flex-col px-4 ">
+      <div className="border-b text-center my-8">
         <h1 className="text-2xl text-primary">
           <span>2.</span> Teck Stack
         </h1>
