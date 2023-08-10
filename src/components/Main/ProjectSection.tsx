@@ -35,7 +35,7 @@ const ProjectSection = () => {
         <Card>
           <CardHeader className="flex flex-col gap-4 border-b">
             <CardTitle>Periodically - The Periodic Table </CardTitle>
-            <CardDescription className="flex gap-4 items-center">
+            <CardDescription className="flex gap-4 items-center  text-gray-500 dark:text-gray-400">
               Periodically - is a free web application which displays the entire
               Periodic Table at startup interface. The table has a long- form
               approved by the International Union of Pure and Applied Chemistry
@@ -48,7 +48,7 @@ const ProjectSection = () => {
               </Button>
             </CardDescription>
           </CardHeader>
-          <CardContent className="mt-4 border-b">
+          <CardContent className="mt-8 border-b">
             <div className="w-full flex justify-center ">
               <Image
                 src={"/projects/Periodically-poster.gif"}
@@ -58,7 +58,7 @@ const ProjectSection = () => {
                 className="rounded-lg glow__background"
               />
             </div>
-            <p className="mt-4">
+            <p className="mt-8 text-gray-500 dark:text-gray-400">
               We all remember the times when we used to struggle to remember the
               names, properties, groups, etc. of periodic elements. Those
               sweet-saur nostalgic school memories of memorizing the whole
@@ -70,7 +70,7 @@ const ProjectSection = () => {
           </CardContent>
           <CardFooter className="mt-2 flex flex-col">
             <h1 className="text-xl text-primary">Tech Stack:</h1>
-            <div className="flex gap-x-2">
+            <div className="flex gap-2 flex-wrap">
               <Badge className="text-white">
                 <BiLogoJavascript size={25} />
                 <span className="pl-2">JavaScript</span>
@@ -93,7 +93,7 @@ const ProjectSection = () => {
         <Card>
           <CardHeader className="flex flex-col gap-4 border-b">
             <CardTitle>cryptoverse - Cryptocurrency App </CardTitle>
-            <CardDescription className="flex gap-4 items-center">
+            <CardDescription className="flex gap-4 items-center  text-gray-500 dark:text-gray-400">
               Cryptoverse: Your all-in-one crypto companion. Explore 200+
               cryptos, interactive charts, currency converter, news, and
               portfolio tracking. Powered by React.js, Tailwind CSS, CoinGecko
@@ -106,7 +106,7 @@ const ProjectSection = () => {
               </Button>
             </CardDescription>
           </CardHeader>
-          <CardContent className="mt-4 border-b">
+          <CardContent className="mt-8 border-b">
             <div className="w-full flex justify-center ">
               <Image
                 src={"/projects/cryptoverse-poster.png"}
@@ -116,7 +116,7 @@ const ProjectSection = () => {
                 className="rounded-lg glow__background"
               />
             </div>
-            <p className="mt-4">
+            <p className="mt-8  text-gray-500 dark:text-gray-400">
               Cryptoverse is an innovative and user-friendly web application
               designed to cater to cryptocurrency enthusiasts and investors
               alike. With a vast database comprising details of over 200
@@ -129,7 +129,7 @@ const ProjectSection = () => {
           </CardContent>
           <CardFooter className="mt-2 flex flex-col">
             <h1 className="text-xl text-primary">Tech Stack:</h1>
-            <div className="flex gap-x-2">
+            <div className="flex gap-2 flex-wrap">
               <Badge className="text-white">
                 <BiLogoTypescript size={25} />
                 <span className="pl-2">TypeScript</span>

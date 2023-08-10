@@ -4,7 +4,14 @@ import Image from "next/image";
 import React from "react";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
-import { FileTextIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import {
+  FileTextIcon,
+  GitHubLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
+import Link from "next/link";
+import { BiMailSend } from "react-icons/bi";
 
 const HeroSection = () => {
   const { theme } = useTheme();
@@ -41,6 +48,29 @@ const HeroSection = () => {
             "I build things for the web."
           </span>
         </div>
+        <div className="flex gap-x-4">
+          <Link
+            href={"https://twitter.com/_Harsh_raghav_"}
+            target="_blank"
+            className="p-2 bg-primary rounded-lg text-white"
+          >
+            <TwitterLogoIcon />
+          </Link>
+          <Link
+            href={"https://www.linkedin.com/in/harsh-kumar-raghav-7285311b9/"}
+            target="_blank"
+            className="p-2 bg-primary rounded-lg text-white"
+          >
+            <LinkedInLogoIcon />
+          </Link>
+          <Link
+            href={"mailto:raghavharsh)68@gmial.com"}
+            target="_blank"
+            className="p-2 bg-primary rounded-lg text-white"
+          >
+            <BiMailSend />
+          </Link>
+        </div>
         <p className="text-center text-gray-500 dark:text-white">
           Tech-savvy problem-solver with a passion for coding and a love for
           innovation. Proficient in Javascript, TypeScript, Go, Next JS,
@@ -50,12 +80,18 @@ const HeroSection = () => {
         </p>
         <div className="flex gap-x-8">
           <Button className="flex items-center justify-center gap-x-2 text-white">
-            <FileTextIcon />
-            <span>Resume</span>
+            <Link
+              className="flex items-center justify-center gap-x-2 text-white"
+              href="/Resume/Harsh'sResume.pdf"
+            >
+              <FileTextIcon />
+              <span>Resume</span>
+            </Link>
           </Button>
           <Button
             className="flex items-center justify-center gap-x-2"
             variant={"outline"}
+            onClick={() => window.open("https://github.com/HarshKumarraghav")}
           >
             <GitHubLogoIcon />
             <span>GitHub</span>
