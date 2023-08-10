@@ -28,7 +28,7 @@ const TechStack = () => {
           <CardHeader>
             <CardTitle className="text-xl">Languages</CardTitle>
           </CardHeader>
-          <CardContent className="flex gap-x-2">
+          <CardContent className="flex gap-x-2 flex-wrap">
             <Badge className="text-white">
               <BiLogoJavascript size={25} />
               <span className="pl-2">JavaScript</span>
