@@ -12,10 +12,17 @@ import {
 } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { BiMailSend } from "react-icons/bi";
+import { useSound } from "@/Hooks/Sound/useSound";
 
 const HeroSection = () => {
+  const { soundEnabled } = useSound();
   const { theme } = useTheme();
-
+  const HoverSrc = "/Audio/tap.mp3";
+  const ClickSrc = "/Audio/click.mp3";
+  const AudioPlayer = (Audiosrc: string) => {
+    const audio = new Audio(Audiosrc);
+    if (soundEnabled) audio.play();
+  };
   return (
     <div
       className="w-full h-[calc(100vh-5rem)] flex flex-col justify-center items-center px-4"
@@ -26,7 +33,12 @@ const HeroSection = () => {
     >
       <div className="w-full h-1/3 border-b border-primary relative flex justify-center">
         <div className="absolute -bottom-9 floating__avatar glow__background">
-          <Badge className="ml-16 mb-4 text-white">Software Engineer</Badge>
+          <Badge
+            className="ml-16 mb-4 text-white"
+            onMouseEnter={() => AudioPlayer(HoverSrc)}
+          >
+            Software Engineer
+          </Badge>
           {theme === "dark" ? (
             <Image
               src="/avatars/Avatar-dark.png"
@@ -57,6 +69,7 @@ const HeroSection = () => {
         <div className="flex gap-x-4">
           <Link
             href={"https://twitter.com/_Harsh_raghav_"}
+            onMouseEnter={() => AudioPlayer(HoverSrc)}
             target="_blank"
             className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
           >
@@ -64,6 +77,7 @@ const HeroSection = () => {
           </Link>
           <Link
             href={"https://www.linkedin.com/in/harsh-kumar-raghav-7285311b9/"}
+            onMouseEnter={() => AudioPlayer(HoverSrc)}
             target="_blank"
             className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
           >
@@ -71,6 +85,7 @@ const HeroSection = () => {
           </Link>
           <Link
             href={"mailto:raghavharsh)68@gmial.com"}
+            onMouseEnter={() => AudioPlayer(HoverSrc)}
             target="_blank"
             className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
           >
@@ -87,17 +102,21 @@ const HeroSection = () => {
         <div className="flex gap-x-8 z-10">
           <Button className="flex items-center justify-center gap-x-2 text-white ">
             <Link
+              onMouseEnter={() => AudioPlayer(HoverSrc)}
               className="flex items-center justify-center gap-x-2 text-white"
               href="/Resume/Harsh'sResume.pdf"
+              onMouseDown={() => AudioPlayer(ClickSrc)}
             >
               <FileTextIcon />
               <span>Resume</span>
             </Link>
           </Button>
           <Button
+            onMouseEnter={() => AudioPlayer(HoverSrc)}
             className="flex items-center justify-center gap-x-2 "
             variant={"outline"}
             onClick={() => window.open("https://github.com/HarshKumarraghav")}
+            onMouseDown={() => AudioPlayer(ClickSrc)}
           >
             <GitHubLogoIcon />
             <span>GitHub</span>

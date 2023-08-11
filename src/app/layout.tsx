@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import ThemeProviders from "@/Providers/ThemeProvider";
-
+import { SoundProvider } from "@/Providers/SoundProvider";
 export const metadata: Metadata = {
   title: "Harsh K. Raghav",
   description:
@@ -19,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
-        <ThemeProviders>{children}</ThemeProviders>
+        <ThemeProviders>
+          <SoundProvider>{children}</SoundProvider>
+        </ThemeProviders>
       </body>
     </html>
   );

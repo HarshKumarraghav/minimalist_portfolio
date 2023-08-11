@@ -9,8 +9,20 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useSound } from "@/Hooks/Sound/useSound";
 const ThemeSwitcher = () => {
+  const { soundEnabled } = useSound();
   const { setTheme } = useTheme();
+
+  const AudioSrc = "/Audio/light-switch.mp3";
+
+  const AudioPlayer = (Audiosrc: string) => {
+    const audio = new Audio(Audiosrc);
+    if (soundEnabled) {
+      audio.play();
+    }
+  };
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -25,13 +37,28 @@ const ThemeSwitcher = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("light");
+            AudioPlayer(AudioSrc);
+          }}
+        >
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("dark");
+            AudioPlayer(AudioSrc);
+          }}
+        >
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("system");
+            AudioPlayer(AudioSrc);
+          }}
+        >
           System
         </DropdownMenuItem>
       </DropdownMenuContent>

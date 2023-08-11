@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ThemeSwitcher from "../Theme/ThemeSwitcher";
 import NavigatorMenu from "./Navigator";
+import AudioSwitch from "../Audio/AudioSwitch";
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
         <div className="flex items-center gap-x-3">
           <ThemeSwitcher />
           <NavigatorMenu />
+          <AudioSwitch />
         </div>
       </div>
     </div>

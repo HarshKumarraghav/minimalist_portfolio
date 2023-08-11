@@ -1,6 +1,7 @@
 "use client";
 import { IoIosArrowUp } from "react-icons/io";
 import React, { useEffect, useState } from "react";
+import { useSound } from "@/Hooks/Sound/useSound";
 
 const ScrollToTop = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -22,7 +23,12 @@ const ScrollToTop = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  const { soundEnabled } = useSound();
+  const AudioSrc = "/Audio/click.mp3";
+  const AudioPlayer = (Audiosrc: string) => {
+    const audio = new Audio(Audiosrc);
+    if (soundEnabled) audio.play();
+  };
   return (
     // Show the button only if showScroll is true
     <div
@@ -30,7 +36,9 @@ const ScrollToTop = () => {
     >
       <button
         onClick={() => {
+          AudioPlayer(AudioSrc);
           window.scrollTo({ top: 0, behavior: "smooth" });
+          AudioPlayer("/Audio/slide.mp3");
         }}
         className="bg-primary hover:bg-primary hover:text-white text-white rounded-full p-2"
       >

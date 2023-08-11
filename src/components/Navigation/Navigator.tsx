@@ -9,7 +9,15 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { useSound } from "@/Hooks/Sound/useSound";
 const NavigatorMenu = () => {
+  const { soundEnabled } = useSound();
+  const AudioSrc = "/Audio/click.mp3";
+  const SlideSrc = "/Audio/slide.mp3";
+  const AudioPlayer = (Audiosrc: string) => {
+    const audio = new Audio(Audiosrc);
+    if (soundEnabled) audio.play();
+  };
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -30,8 +38,17 @@ const NavigatorMenu = () => {
           smooth={true}
           offset={50}
           duration={500}
+          onMouseDown={() => {
+            AudioPlayer(SlideSrc);
+          }}
         >
-          <DropdownMenuItem>About</DropdownMenuItem>
+          <DropdownMenuItem
+            onClick={() => {
+              AudioPlayer(AudioSrc);
+            }}
+          >
+            About
+          </DropdownMenuItem>
         </Link>
         <Link
           activeClass="active"
@@ -40,8 +57,13 @@ const NavigatorMenu = () => {
           smooth={true}
           offset={50}
           duration={500}
+          onMouseDown={() => {
+            AudioPlayer(SlideSrc);
+          }}
         >
-          <DropdownMenuItem>Teck Stack</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => AudioPlayer(AudioSrc)}>
+            Teck Stack
+          </DropdownMenuItem>
         </Link>
         <Link
           activeClass="active"
@@ -50,8 +72,13 @@ const NavigatorMenu = () => {
           smooth={true}
           offset={50}
           duration={500}
+          onMouseDown={() => {
+            AudioPlayer(SlideSrc);
+          }}
         >
-          <DropdownMenuItem>Work Experience</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => AudioPlayer(AudioSrc)}>
+            Work Experience
+          </DropdownMenuItem>
         </Link>
         <Link
           activeClass="active"
@@ -60,8 +87,13 @@ const NavigatorMenu = () => {
           smooth={true}
           offset={50}
           duration={500}
+          onMouseDown={() => {
+            AudioPlayer(SlideSrc);
+          }}
         >
-          <DropdownMenuItem>Projects</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => AudioPlayer(AudioSrc)}>
+            Projects
+          </DropdownMenuItem>
         </Link>
       </DropdownMenuContent>
     </DropdownMenu>
