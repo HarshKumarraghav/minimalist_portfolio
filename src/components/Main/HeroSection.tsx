@@ -15,14 +15,14 @@ import { BiMailSend } from "react-icons/bi";
 
 const HeroSection = () => {
   const { theme } = useTheme();
+
   return (
     <div className="w-full h-[calc(100vh-5rem)] flex flex-col justify-center items-center px-4">
-      <div className="w-full h-1/3 border-b border-primary  relative flex justify-center">
-        <div className="absolute -bottom-9  floating__avatar glow__background">
+      <div className="w-full h-1/3 border-b border-primary relative flex justify-center">
+        <div className="absolute -bottom-9 floating__avatar animate-bounce">
           <Badge className="ml-16 mb-4 text-white">Software Engineer</Badge>
           {theme === "dark" ? (
             <Image
-              className=""
               src="/avatars/Avatar-dark.png"
               alt="avatar-light"
               width={100}
@@ -52,21 +52,21 @@ const HeroSection = () => {
           <Link
             href={"https://twitter.com/_Harsh_raghav_"}
             target="_blank"
-            className="p-2 bg-primary rounded-lg text-white"
+            className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
           >
             <TwitterLogoIcon />
           </Link>
           <Link
             href={"https://www.linkedin.com/in/harsh-kumar-raghav-7285311b9/"}
             target="_blank"
-            className="p-2 bg-primary rounded-lg text-white"
+            className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
           >
             <LinkedInLogoIcon />
           </Link>
           <Link
             href={"mailto:raghavharsh)68@gmial.com"}
             target="_blank"
-            className="p-2 bg-primary rounded-lg text-white"
+            className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
           >
             <BiMailSend />
           </Link>
@@ -79,7 +79,7 @@ const HeroSection = () => {
           solutions.
         </p>
         <div className="flex gap-x-8">
-          <Button className="flex items-center justify-center gap-x-2 text-white">
+          <Button className="flex items-center justify-center gap-x-2 text-white ">
             <Link
               className="flex items-center justify-center gap-x-2 text-white"
               href="/Resume/Harsh'sResume.pdf"
@@ -89,7 +89,7 @@ const HeroSection = () => {
             </Link>
           </Button>
           <Button
-            className="flex items-center justify-center gap-x-2"
+            className="flex items-center justify-center gap-x-2 "
             variant={"outline"}
             onClick={() => window.open("https://github.com/HarshKumarraghav")}
           >

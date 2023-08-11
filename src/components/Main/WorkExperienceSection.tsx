@@ -3,7 +3,10 @@ import { Card, CardContent, CardHeader } from "../ui/card";
 
 const WorkExperienceSection = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center px-4 ">
+    <div
+      className="w-full min-h-screen flex flex-col justify-center px-4 "
+      id="experience"
+    >
       <div className="border-b text-center my-4">
         <h1 className="text-2xl text-primary">
           <span>3.</span> Work Experience

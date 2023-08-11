@@ -5,7 +5,10 @@ import { PiStudentBold } from "react-icons/pi";
 import Link from "next/link";
 const AboutSection = () => {
   return (
-    <div className="w-full min-h-screen px-4 flex flex-col justify-center mt-12 md:mt-0">
+    <div
+      className="w-full min-h-screen px-4 flex flex-col justify-center mt-12 md:mt-0"
+      id="about"
+    >
       <div className="border-b text-center">
         <h1 className="text-2xl text-primary">
           <span>1.</span> About Me

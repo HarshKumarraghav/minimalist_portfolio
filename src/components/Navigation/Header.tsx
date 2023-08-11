@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import ThemeSwitcher from "../Theme/ThemeSwitcher";
+import NavigatorMenu from "./Navigator";
 
 const Header = () => {
   return (
@@ -9,8 +10,9 @@ const Header = () => {
         <div className="flex items-center">
           <Image alt="loga" src={"/logo/logo.png"} width={40} height={40} />
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-x-3">
           <ThemeSwitcher />
+          <NavigatorMenu />
         </div>
       </div>
     </div>

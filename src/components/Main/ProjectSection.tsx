@@ -22,10 +22,10 @@ import { TbBrandGolang, TbBrandNextjs } from "react-icons/tb";
 
 const ProjectSection = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col px-4 mt-8">
+    <div className="w-full min-h-screen flex flex-col px-4 mt-8" id="projects">
       <div className="border-b text-center my-8">
         <h1 className="text-2xl text-primary">
-          <span>3.</span> Projects
+          <span>4.</span> Projects
         </h1>
       </div>
       <div className="flex flex-col gap-y-4">
