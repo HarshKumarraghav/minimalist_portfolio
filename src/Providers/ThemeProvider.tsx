@@ -5,11 +5,8 @@ interface ProviderProps {
   children: ReactNode;
 }
 export default function ThemeProviders({ children }: ProviderProps) {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return <>{children}</>;
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       {children}
     </ThemeProvider>
   );

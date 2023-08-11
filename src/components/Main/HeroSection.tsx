@@ -25,7 +25,7 @@ const HeroSection = () => {
   };
   return (
     <div
-      className="w-full h-[calc(100vh-5rem)] flex flex-col justify-center items-center px-4"
+      className="w-full h-[calc(100vh-5rem)] flex flex-col justify-center items-center px-4 mb-12"
       style={{
         background:
           "radial-gradient(600px at 431px 97px, rgba(29, 78, 216, 0.15), transparent 80%)",
@@ -57,12 +57,10 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="w-full h-2/3 flex mt-12 items-center justify-evenly flex-col gap-y-2 ">
-        <div className="text-3xl font-bold text-center ">
+        <div className="text-3xl font-bold text-center">
           <span className="text-xl"> Hi,👋 I&apos;m</span>
-          <h1 className="italic text-primary typewriter__heading">
-            Harsh K. Raghav
-          </h1>
-          <span className="italic text-lg font-semibold ">
+          <h1 className="text-primary typewriter__heading">Harsh K. Raghav</h1>
+          <span className=" text-lg font-semibold ">
             &quot;I build things for the web.&quot;
           </span>
         </div>
