@@ -84,7 +84,7 @@ const HeroSection = () => {
           technical and creative skills to develop robust and visually appealing
           solutions.
         </p>
-        <div className="flex gap-x-8">
+        <div className="flex gap-x-8 z-10">
           <Button className="flex items-center justify-center gap-x-2 text-white ">
             <Link
               className="flex items-center justify-center gap-x-2 text-white"
