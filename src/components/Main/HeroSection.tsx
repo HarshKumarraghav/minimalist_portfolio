@@ -82,7 +82,7 @@ const HeroSection = () => {
             <LinkedInLogoIcon />
           </Link>
           <Link
-            href={"mailto:raghavharsh)68@gmial.com"}
+            href={"mailto:raghavharsh068@gmial.com"}
             onClick={() => AudioPlayer(ClickSrc)}
             target="_blank"
             className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
