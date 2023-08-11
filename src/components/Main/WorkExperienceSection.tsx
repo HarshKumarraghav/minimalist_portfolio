@@ -14,7 +14,12 @@ const WorkExperienceSection = () => {
       </div>
       <ol className="relative border-l border-primary ">
         <li className="mb-10 ml-4">
-          <Card>
+          <Card
+            style={{
+              background:
+                "radial-gradient(600px at 431px 97px, rgba(29, 78, 216, 0.15), transparent 80%)",
+            }}
+          >
             <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary "></div>
             <CardHeader>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -41,7 +46,12 @@ const WorkExperienceSection = () => {
           </Card>
         </li>
         <li className="mb-10 ml-4">
-          <Card>
+          <Card
+            style={{
+              background:
+                "radial-gradient(600px at 431px 97px, rgba(29, 78, 216, 0.15), transparent 80%)",
+            }}
+          >
             <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary "></div>
             <CardHeader>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -64,7 +74,12 @@ const WorkExperienceSection = () => {
           </Card>
         </li>
         <li className="ml-4">
-          <Card>
+          <Card
+            style={{
+              background:
+                "radial-gradient(600px at 431px 97px, rgba(29, 78, 216, 0.15), transparent 80%)",
+            }}
+          >
             <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary "></div>
             <CardHeader>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
