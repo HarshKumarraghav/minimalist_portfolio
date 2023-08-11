@@ -69,7 +69,7 @@ const HeroSection = () => {
         <div className="flex gap-x-4">
           <Link
             href={"https://twitter.com/_Harsh_raghav_"}
-            onMouseEnter={() => AudioPlayer(HoverSrc)}
+            onClick={() => AudioPlayer(ClickSrc)}
             target="_blank"
             className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
           >
@@ -77,7 +77,7 @@ const HeroSection = () => {
           </Link>
           <Link
             href={"https://www.linkedin.com/in/harsh-kumar-raghav-7285311b9/"}
-            onMouseEnter={() => AudioPlayer(HoverSrc)}
+            onClick={() => AudioPlayer(ClickSrc)}
             target="_blank"
             className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
           >
@@ -85,7 +85,7 @@ const HeroSection = () => {
           </Link>
           <Link
             href={"mailto:raghavharsh)68@gmial.com"}
-            onMouseEnter={() => AudioPlayer(HoverSrc)}
+            onClick={() => AudioPlayer(ClickSrc)}
             target="_blank"
             className="p-2 bg-primary rounded-lg text-white transform transition-transform hover:scale-110"
           >

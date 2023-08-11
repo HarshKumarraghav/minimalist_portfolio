@@ -1,9 +1,18 @@
+"use client";
 import React from "react";
 import { Badge } from "../ui/badge";
 import { MdEngineering } from "react-icons/md";
 import { PiStudentBold } from "react-icons/pi";
 import Link from "next/link";
+import { useSound } from "@/Hooks/Sound/useSound";
 const AboutSection = () => {
+  const { soundEnabled } = useSound();
+  const ClickSrc = "/Audio/click.mp3";
+  const HoverSrc = "/Audio/tap.mp3";
+  const AudioPlayer = (Audiosrc: string) => {
+    const audio = new Audio(Audiosrc);
+    if (soundEnabled) audio.play();
+  };
   return (
     <div
       className="w-full min-h-screen px-4 flex flex-col justify-center mt-12 md:mt-0"
@@ -18,7 +27,12 @@ const AboutSection = () => {
         <div className="flex flex-col gap-y-2 text-w">
           <span className="text-primary text-xl">Harsh Kumar Raghav</span>
           <div className="flex gap-x-2">
-            <Link href={"https://twitter.com/_Harsh_raghav_"} target="_blank">
+            <Link
+              href={"https://twitter.com/_Harsh_raghav_"}
+              className="z-10"
+              onClick={() => AudioPlayer(ClickSrc)}
+              target="_blank"
+            >
               @_Harsh_raghav_
             </Link>
             <span className="text-primary">|</span>
@@ -26,11 +40,17 @@ const AboutSection = () => {
             <span className="text-primary">|</span> Delhi
           </div>
           <div className="w-full flex gap-x-2">
-            <Badge className="text-white flex gap-x-2">
+            <Badge
+              className="text-white flex gap-x-2 z-10"
+              onMouseEnter={() => AudioPlayer(HoverSrc)}
+            >
               <MdEngineering size={20} />
               Software Engineer
             </Badge>
-            <Badge className="text-white flex gap-x-2">
+            <Badge
+              className="text-white flex gap-x-2 z-10"
+              onMouseEnter={() => AudioPlayer(HoverSrc)}
+            >
               <PiStudentBold size={20} />
               Student
             </Badge>

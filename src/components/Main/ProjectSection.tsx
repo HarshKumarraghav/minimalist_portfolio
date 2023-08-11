@@ -19,8 +19,16 @@ import {
   BiLogoTypescript,
 } from "react-icons/bi";
 import { TbBrandGolang, TbBrandNextjs } from "react-icons/tb";
+import { useSound } from "@/Hooks/Sound/useSound";
 
 const ProjectSection = () => {
+  const { soundEnabled } = useSound();
+  const HoverSrc = "/Audio/tap.mp3";
+  const ClickSrc = "/Audio/click.mp3";
+  const AudioPlayer = (Audiosrc: string) => {
+    const audio = new Audio(Audiosrc);
+    if (soundEnabled) audio.play();
+  };
   return (
     <div className="w-full min-h-screen flex flex-col px-4 mt-8" id="projects">
       <div className="border-b text-center my-8">
@@ -38,22 +46,24 @@ const ProjectSection = () => {
               approved by the International Union of Pure and Applied Chemistry
               (IUPAC) as the core.
               <Button
-                className="text-white  rounded-full"
-                onClick={() =>
+                className="text-white  rounded-full z-10"
+                onClick={() => {
+                  AudioPlayer(ClickSrc);
                   window.open(
                     "https://github.com/HarshKumarraghav/periodically"
-                  )
-                }
+                  );
+                }}
               >
                 <GitHubLogoIcon />
               </Button>
               <Button
-                className="text-white rounded-full"
-                onClick={() =>
+                className="text-white rounded-full z-10"
+                onClick={() => {
+                  AudioPlayer(ClickSrc);
                   window.open(
                     "https://periodically-webapp-harshkumarraghav.vercel.app/"
-                  )
-                }
+                  );
+                }}
               >
                 <ExternalLinkIcon />
               </Button>
@@ -82,19 +92,31 @@ const ProjectSection = () => {
           <CardFooter className="mt-2 flex flex-col">
             <h1 className="text-xl text-primary">Tech Stack:</h1>
             <div className="flex gap-2 flex-wrap">
-              <Badge className="text-white">
+              <Badge
+                className="text-white z-10"
+                onMouseEnter={() => AudioPlayer(HoverSrc)}
+              >
                 <BiLogoJavascript size={25} />
                 <span className="pl-2">JavaScript</span>
               </Badge>
-              <Badge className="text-white">
+              <Badge
+                className="text-white z-10"
+                onMouseEnter={() => AudioPlayer(HoverSrc)}
+              >
                 <BiLogoGoLang size={25} />
                 <span className="pl-2">Golang</span>
               </Badge>
-              <Badge className="text-white">
+              <Badge
+                className="text-white z-10"
+                onMouseEnter={() => AudioPlayer(HoverSrc)}
+              >
                 <TbBrandNextjs size={25} />
                 <span className="pl-2">Next.js</span>
               </Badge>
-              <Badge className="text-white">
+              <Badge
+                className="text-white z-10"
+                onMouseEnter={() => AudioPlayer(HoverSrc)}
+              >
                 <TbBrandGolang size={25} />
                 <span className="pl-2">Gin-Gonic</span>
               </Badge>
@@ -110,18 +132,22 @@ const ProjectSection = () => {
               portfolio tracking. Powered by React.js, Tailwind CSS, CoinGecko
               API, Bing News API, and Shcadcn UI.
               <Button
-                className="text-white  rounded-full"
-                onClick={() =>
-                  window.open("https://github.com/HarshKumarraghav/Cryptoverse")
-                }
+                className="text-white  rounded-full z-10"
+                onClick={() => {
+                  AudioPlayer(ClickSrc);
+                  window.open(
+                    "https://github.com/HarshKumarraghav/Cryptoverse"
+                  );
+                }}
               >
                 <GitHubLogoIcon />
               </Button>
               <Button
-                className="text-white rounded-full"
-                onClick={() =>
-                  window.open("https://cryptoapiappreact.netlify.app")
-                }
+                className="text-white rounded-full z-10"
+                onClick={() => {
+                  AudioPlayer(ClickSrc);
+                  window.open("https://cryptoapiappreact.netlify.app");
+                }}
               >
                 <ExternalLinkIcon />
               </Button>
@@ -151,11 +177,17 @@ const ProjectSection = () => {
           <CardFooter className="mt-2 flex flex-col">
             <h1 className="text-xl text-primary">Tech Stack:</h1>
             <div className="flex gap-2 flex-wrap">
-              <Badge className="text-white">
+              <Badge
+                className="text-white z-10"
+                onMouseEnter={() => AudioPlayer(HoverSrc)}
+              >
                 <BiLogoTypescript size={25} />
                 <span className="pl-2">TypeScript</span>
               </Badge>
-              <Badge className="text-white">
+              <Badge
+                className="text-white z-10"
+                onMouseEnter={() => AudioPlayer(HoverSrc)}
+              >
                 <BiLogoReact size={25} />
                 <span className="pl-2">React.js</span>
               </Badge>
