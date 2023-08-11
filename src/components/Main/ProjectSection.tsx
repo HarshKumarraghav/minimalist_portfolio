@@ -30,7 +30,7 @@ const ProjectSection = () => {
     if (soundEnabled) audio.play();
   };
   return (
-    <div className="w-full min-h-screen flex flex-col px-4 mt-8" id="projects">
+    <div className="w-full min-h-screen flex flex-col px-4 mt-12" id="projects">
       <div className="border-b text-center my-8">
         <h1 className="text-2xl text-primary">
           <span>4.</span> Projects

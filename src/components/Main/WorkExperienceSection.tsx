@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader } from "../ui/card";
 const WorkExperienceSection = () => {
   return (
     <div
-      className="w-full min-h-screen flex flex-col justify-center px-4 "
+      className="w-full min-h-screen flex flex-col justify-center px-4 mt-12"
       id="experience"
       style={{
         background:
@@ -16,7 +16,7 @@ const WorkExperienceSection = () => {
           <span>3.</span> Work Experience
         </h1>
       </div>
-      <ol className="relative border-l border-primary ">
+      <ol className="relative border-l border-primary mt-10">
         <li className="mb-10 ml-4">
           <Card>
             <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary "></div>

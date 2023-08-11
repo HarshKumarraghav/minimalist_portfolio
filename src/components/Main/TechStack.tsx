@@ -28,13 +28,13 @@ const TechStack = () => {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col px-4 " id="stack">
+    <div className="w-full min-h-screen flex flex-col px-4 mt-12" id="stack">
       <div className="border-b text-center my-8">
         <h1 className="text-2xl text-primary">
           <span>2.</span> Teck Stack
         </h1>
       </div>
-      <div className="flex flex-col gap-y-4 ">
+      <div className="flex flex-col gap-y-4 mt-8">
         <Card>
           <CardHeader>
             <CardTitle className="text-xl">Languages</CardTitle>
