@@ -31,7 +31,7 @@ const HeroSection = () => {
           "radial-gradient(600px at 431px 97px, rgba(29, 78, 216, 0.15), transparent 80%)",
       }}
     >
-      <div className="w-full h-1/3 border-b border-primary relative flex justify-center">
+      <div className="w-full h-2/4 border-b border-primary relative flex justify-center">
         <div className="absolute -bottom-9 floating__avatar glow__background">
           <Badge
             className="ml-16 mb-4 text-white"
