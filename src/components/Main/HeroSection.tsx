@@ -103,6 +103,7 @@ const HeroSection = () => {
               onMouseEnter={() => AudioPlayer(HoverSrc)}
               className="flex items-center justify-center gap-x-2 text-white"
               href="/Resume/Harsh'sResume.pdf"
+              target="_blank"
               onMouseDown={() => AudioPlayer(ClickSrc)}
             >
               <FileTextIcon />
