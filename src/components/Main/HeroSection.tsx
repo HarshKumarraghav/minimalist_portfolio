@@ -25,13 +25,13 @@ const HeroSection = () => {
   };
   return (
     <div
-      className="w-full h-[calc(100vh-5rem)] flex flex-col justify-center items-center px-4 mb-12"
+      className="w-full h-[calc(100vh-5rem)] flex flex-col justify-center items-center px-4 "
       style={{
         background:
-          "radial-gradient(600px at 431px 97px, rgba(29, 78, 216, 0.15), transparent 80%)",
+          "radial-gradient(400px at 351px 97px, rgba(29, 78, 216, 0.15), transparent 80%)",
       }}
     >
-      <div className="w-full h-2/4 border-b border-primary relative flex justify-center">
+      <div className="w-full h-1/3 md:h-2/4 border-b border-primary relative flex justify-center">
         <div className="absolute -bottom-9 floating__avatar glow__background">
           <Badge
             className="ml-16 mb-4 text-white"
@@ -56,7 +56,7 @@ const HeroSection = () => {
           )}
         </div>
       </div>
-      <div className="w-full h-2/3 flex mt-12 items-center justify-evenly flex-col gap-y-2 ">
+      <div className="w-full h-2/3 md:h-2/4 flex mt-12 items-center justify-evenly flex-col gap-y-2 mb-12">
         <div className="text-3xl font-bold text-center">
           <span className="text-xl"> Hi,👋 I&apos;m</span>
           <h1 className="text-primary typewriter__heading">Harsh K. Raghav</h1>

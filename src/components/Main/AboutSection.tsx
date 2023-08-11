@@ -5,6 +5,7 @@ import { MdEngineering } from "react-icons/md";
 import { PiStudentBold } from "react-icons/pi";
 import Link from "next/link";
 import { useSound } from "@/Hooks/Sound/useSound";
+import { TwitterLogoIcon } from "@radix-ui/react-icons";
 const AboutSection = () => {
   const { soundEnabled } = useSound();
   const ClickSrc = "/Audio/click.mp3";
@@ -29,11 +30,11 @@ const AboutSection = () => {
           <div className="flex gap-x-2">
             <Link
               href={"https://twitter.com/_Harsh_raghav_"}
-              className="z-10"
+              className="z-10 flex gap-x-2 items-center"
               onClick={() => AudioPlayer(ClickSrc)}
               target="_blank"
             >
-              @_Harsh_raghav_
+              <TwitterLogoIcon /> @_Harsh_raghav_
             </Link>
             <span className="text-primary">|</span>
             IT <span className="text-primary">|</span> GBU{" "}
