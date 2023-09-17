@@ -31,7 +31,7 @@ const HeroSection = () => {
           "radial-gradient(400px at 351px 97px, rgba(29, 78, 216, 0.15), transparent 80%)",
       }}
     >
-      <div className="w-full h-1/3 md:h-2/4 border-b border-primary relative flex justify-center">
+      <div className="w-full h-1/3 md:h-2/4 border-b border-primary relative flex justify-center ">
         <div className="absolute -bottom-9 floating__avatar glow__background">
           <Badge
             className="ml-16 mb-4 text-white"
@@ -102,7 +102,7 @@ const HeroSection = () => {
             <Link
               onMouseEnter={() => AudioPlayer(HoverSrc)}
               className="flex items-center justify-center gap-x-2 text-white"
-              href="/Resume/Harsh'sResume.pdf"
+              href="/Resume/HarshResume.pdf"
               target="_blank"
               onMouseDown={() => AudioPlayer(ClickSrc)}
             >

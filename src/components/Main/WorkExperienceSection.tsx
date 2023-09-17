@@ -18,7 +18,7 @@ const WorkExperienceSection = () => {
       </div>
       <ol className="relative border-l border-primary mt-10">
         <li className="mb-10 ml-4">
-          <Card>
+          <Card className="bg-primary-foreground">
             <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary "></div>
             <CardHeader>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -29,7 +29,7 @@ const WorkExperienceSection = () => {
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="mb-4 text-base font-normal ">
                 I spearheaded the creation of the Chatbot Builder Dashboard from
                 the ground up, utilizing ReactFlow for an intuitive node-based
                 interface. This innovation drove productivity and data
@@ -45,7 +45,7 @@ const WorkExperienceSection = () => {
           </Card>
         </li>
         <li className="mb-10 ml-4">
-          <Card>
+          <Card className="bg-primary-foreground">
             <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary "></div>
             <CardHeader>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -56,7 +56,7 @@ const WorkExperienceSection = () => {
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="text-base font-normal ">
                 Mangodoc.ai, a Botsfusion subsidiary in partnership with HighIQ,
                 is akin to a ChatGPT for contracts and documents. Independently,
                 I built the entire product, leveraging cutting-edge technologies
@@ -68,7 +68,7 @@ const WorkExperienceSection = () => {
           </Card>
         </li>
         <li className="ml-4">
-          <Card>
+          <Card className="bg-primary-foreground">
             <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-primary "></div>
             <CardHeader>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -79,7 +79,7 @@ const WorkExperienceSection = () => {
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="text-base font-normal ">
                 I took the lead in organizing seminars and workshops, mentoring
                 students and initiating their development paths. Through various
                 App and Web development workshops, I played a pivotal role in

@@ -35,7 +35,7 @@ const TechStack = () => {
         </h1>
       </div>
       <div className="flex flex-col gap-y-4 mt-8">
-        <Card>
+        <Card className="bg-primary-foreground">
           <CardHeader>
             <CardTitle className="text-xl">Languages</CardTitle>
           </CardHeader>
@@ -63,7 +63,7 @@ const TechStack = () => {
             </Badge>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="bg-primary-foreground">
           <CardHeader>
             <CardTitle className="text-xl">Frameworks/Libraries</CardTitle>
           </CardHeader>
@@ -119,7 +119,7 @@ const TechStack = () => {
             </Badge>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="bg-primary-foreground">
           <CardHeader>
             <CardTitle className="text-xl">Tools</CardTitle>
           </CardHeader>
@@ -154,7 +154,7 @@ const TechStack = () => {
             </Badge>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="bg-primary-foreground">
           <CardHeader>
             <CardTitle className="text-xl">Hosting</CardTitle>
           </CardHeader>

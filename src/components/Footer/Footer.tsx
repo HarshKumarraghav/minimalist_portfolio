@@ -5,7 +5,7 @@ import { BiMailSend } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <div className="w-full py-3 flex flex-col justify-center items-center header__blur mt-8 px-4">
+    <div className="w-full py-3 flex flex-col justify-center items-center header__blur mt-8 px-4 ">
       <div className="flex gap-x-4 my-3">
         <Link
           href={"https://twitter.com/_Harsh_raghav_"}

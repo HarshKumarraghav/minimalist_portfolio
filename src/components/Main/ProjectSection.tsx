@@ -22,7 +22,7 @@ import { TbBrandGolang, TbBrandNextjs } from "react-icons/tb";
 import { useSound } from "@/Hooks/Sound/useSound";
 const PROJECT_DATA = [
   {
-    tittle:
+    title:
       "Infinimind.ai - AI-powered Chatbot, Code, Video, Music, and Image Generation",
     description: `Infinimind.ai the ultimate destination where human creativity intersects with the power of artificial intelligence. Unleash the full potential of your imagination and bring your ideas to life in ways you've never imagined. With its cutting-edge features, Infinimind.ai stands out as a pioneer in the world of AI-powered creativity.`,
     details: `Infinimind.ai the ultimate destination where human creativity intersects with the power of artificial intelligence. Unleash the full potential of your imagination and bring your ideas to life in ways you've never imagined. With its cutting-edge features,Infinimind.ai stands out as a pioneer in the world of AI-powered creativity. Engage in captivating conversations with our advanced AI chatbot, which not only responds intelligently but learns from you, adapting its interactions to your unique style. Need to generate code? Let our cutting-edge AI algorithms instantly craft code snippets, revolutionizing your development process.`,
@@ -133,7 +133,10 @@ const ProjectSection = () => {
     if (soundEnabled) audio.play();
   };
   return (
-    <div className="w-full min-h-screen flex flex-col px-4 mt-12" id="projects">
+    <div
+      className="w-full min-h-screen flex flex-col px-4 mt-12 "
+      id="projects"
+    >
       <div className="border-b text-center my-8">
         <h1 className="text-2xl text-primary">
           <span>4.</span> Projects
@@ -141,13 +144,15 @@ const ProjectSection = () => {
       </div>
       <div className="flex flex-col gap-y-4">
         {PROJECT_DATA.map((project, index) => (
-          <Card key={index}>
-            <CardHeader className="flex flex-col gap-4 border-b">
+          <Card key={index} className="bg-primary-foreground">
+            <CardHeader className="flex flex-col gap-4 border-b ">
               <CardTitle>{project.title}</CardTitle>
-              <CardDescription className="flex gap-4 items-center  text-gray-500 dark:text-gray-400">
+              <CardDescription className="flex flex-col md:flex-row gap-4 items-center  ">
                 {project.description}
+              </CardDescription>
+              <div className="w-full justify-center md:justify-end flex gap-3">
                 <Button
-                  className="text-white  rounded-full z-10"
+                  className="text-white rounded-full z-10"
                   onClick={() => {
                     AudioPlayer(ClickSrc);
                     window.open(project.githubLink);
@@ -164,7 +169,7 @@ const ProjectSection = () => {
                 >
                   <ExternalLinkIcon />
                 </Button>
-              </CardDescription>
+              </div>
             </CardHeader>
             <CardContent className="mt-8 border-b">
               <div className="w-full flex justify-center ">
@@ -176,9 +181,7 @@ const ProjectSection = () => {
                   className="rounded-lg glow__background"
                 />
               </div>
-              <p className="mt-8 text-gray-500 dark:text-gray-400">
-                {project.details}
-              </p>
+              <p className="mt-8 ">{project.details}</p>
             </CardContent>
             <CardFooter className="mt-2 flex flex-col">
               <h1 className="text-xl text-primary">Tech Stack:</h1>

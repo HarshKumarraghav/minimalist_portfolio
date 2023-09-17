@@ -16,7 +16,7 @@ const AboutSection = () => {
   };
   return (
     <div
-      className="w-full min-h-screen px-4 flex flex-col justify-center mt-12"
+      className="w-full min-h-screen px-4 flex flex-col justify-center mt-12 "
       id="about"
     >
       <div className="border-b text-center">
@@ -24,7 +24,7 @@ const AboutSection = () => {
           <span>1.</span> About Me
         </h1>
       </div>
-      <div className="mt-8 px-3 md:px-0 text-gray-500 dark:text-gray-400 ">
+      <div className="mt-8 p-8 bg-primary-foreground border rounded-2xl">
         <div className="flex flex-col gap-y-2 text-w">
           <span className="text-primary text-xl">Harsh Kumar Raghav</span>
           <div className="flex gap-x-2 flex-wrap">
