@@ -23,6 +23,7 @@ const HeroSection = () => {
     const audio = new Audio(Audiosrc);
     if (soundEnabled) audio.play();
   };
+  
   return (
     <div
       className="w-full h-[calc(100vh-5rem)] flex flex-col justify-center items-center px-4"
